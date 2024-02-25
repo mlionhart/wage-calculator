@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wage Calculator</title>
+</head>
+<body>
+  <header>Mike's Raise Calculator</header><br>
+  <label for="current-wage">Current Wage:</label>
+  <input id="current-wage" type="text">
+  <label for="last-check">Last Check Amount:</label>
+  <input id="last-check" type="text">
+  <label for="raise-wage">New Wage (after raise):</label>
+  <input id="raise-wage" type="text"><br><br>
+
+  <button id="calculate" onclick="calculate()">Calculate New Pay</button><br><br>
+
+  <div id="container"></div> 
+  <div id="container2"></div>
+  
+  <script>
+    
+    // function calculate() {
+    //   var currentWage = document.getElementById('current-wage').value;
+    //   var futureWage = document.getElementById('raise-wage').value;
+    //   var lastCheck = document.getElementById('last-check').value;
+    //   let amount = (lastCheck * futureWage)/currentWage;
+    //   amount = amount.toFixed(2);
+    //   let yearAmount = amount * 26;
+    //   yearAmount = yearAmount.toFixed(2);
+    //   console.log(amount);
+    //   document.getElementById('container').innerHTML = 'Your NET Paycheck amount at this Wage is $' + amount;
+    //   document.getElementById('container2').innerHTML = 'Your NET Annual Pay at this Wage is $' + yearAmount;
+    // }
+  </script>
+
+  <script src="wage-calc.js"></script>
+</body>
+</html>
